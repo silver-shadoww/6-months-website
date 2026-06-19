@@ -1,0 +1,138 @@
+.page{
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    url("../images/backgrounds/lock-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.lock-container{
+
+    text-align:center;
+}
+
+.lock-container h1{
+
+    font-family:'VT323', monospace;
+
+    font-size:3rem;
+
+    color:#7a4d60;
+
+    margin-bottom:20px;
+
+    text-shadow:
+    1px 1px 0 rgba(255,255,255,0.5);
+}
+
+.lock-image{
+
+    width:460px;
+
+    image-rendering:pixelated;
+
+    opacity:1;
+
+    transition:
+    opacity 0.8s ease,
+    transform 0.8s ease,
+    filter 0.8s ease;
+}
+
+.glow{
+
+    filter:
+    drop-shadow(0 0 15px #ff84b4)
+    drop-shadow(0 0 30px #ff84b4);
+}
+
+.dials{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:4px;
+
+    margin-top:-175px;
+
+    margin-bottom:130px;
+
+    position:relative;
+
+    z-index:10;
+}
+
+.dial{
+
+    width:28px;
+    height:28px;
+
+    background:white;
+
+    border:2px solid #4b3c43;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    font-family:'VT323', monospace;
+
+    font-size:1.5rem;
+
+    user-select:none;
+
+    transition:0.15s;
+}
+
+.dial:hover{
+
+    transform:translateY(-2px);
+}
+
+#unlockBtn{
+
+    border:none;
+
+    background:#f7a8c4;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    font-family:'VT323', monospace;
+
+    font-size:2rem;
+}
+
+#unlockBtn:hover{
+
+    background:#ef93b4;
+}
+
+#message{
+
+    margin-top:15px;
+
+    font-family:'VT323', monospace;
+
+    font-size:2rem;
+
+    color:#7a4d60;
+
+    min-height:40px;
+}

@@ -1,0 +1,134 @@
+.page{
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    url("../images/backgrounds/envelope-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.envelope-wrapper{
+
+    position:relative;
+
+    width:700px;
+    height:700px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.envelope-image{
+
+    position:absolute;
+
+    width:650px;
+
+    image-rendering:pixelated;
+
+    transition:0.6s ease;
+}
+
+.hidden{
+
+    opacity:0;
+
+    pointer-events:none;
+}
+
+#closedEnvelope{
+
+    cursor:pointer;
+}
+
+#letterContent{
+
+    position:absolute;
+
+    top:140px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:300px;
+
+    text-align:center;
+
+    opacity:0;
+
+    transition:1s;
+
+    z-index:10;
+}
+
+#letterContent.show{
+
+    opacity:1;
+}
+
+#typedText{
+
+    color:#8b5f79;
+
+    font-family:'VT323', monospace;
+
+    font-size:3rem;
+
+    line-height:1.4;
+
+    text-align:center;
+}
+
+#nextBtn{
+
+    position:relative;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    margin-top:25px;
+
+    border:none;
+
+    background:none;
+
+    color:#8b5f79;
+
+    font-size:4rem;
+
+    cursor:pointer;
+
+    display:none;
+
+    animation:bounce 1s infinite;
+}
+
+#nextBtn.show{
+
+    display:block;
+}
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:
+        translateX(-50%)
+        translateY(0);
+    }
+
+    50%{
+        transform:
+        translateX(-50%)
+        translateY(10px);
+    }
+}

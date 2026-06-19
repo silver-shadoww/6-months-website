@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    font-family:'VT323', monospace;
+}
+
+.page{
+    width:100vw;
+    height:100vh;
+
+    background-image:url("../images/backgrounds/envelope-bg.jpg");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

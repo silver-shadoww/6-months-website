@@ -1,0 +1,81 @@
+.letter-page{
+
+    min-height:100vh;
+
+    background:url("../images/backgrounds/letter-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.typewriter-container{
+
+    position:relative;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transform:translateY(60px);
+}
+
+/* ONLY THE TYPEWRITER SIZE CHANGES HERE */
+
+.typewriter{
+
+    width:750px;
+
+    display:block;
+
+    image-rendering:pixelated;
+
+    transform:scale(2.75);
+
+    transform-origin:center center;
+}
+
+/* LETTER TEXT */
+
+.letter-text{
+
+    position:absolute;
+
+    top:-17%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:260px;
+
+    height:500px;
+
+    overflow:hidden;
+
+    text-align:left;
+
+    color:#6f4b65;
+
+    font-size:1.0rem;
+
+    line-height:1.6;
+
+    font-family:'VT323', monospace;
+
+    white-space:pre-wrap;
+}
